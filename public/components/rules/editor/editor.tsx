@@ -175,6 +175,7 @@ export default class Editor extends Component {
                 fill
                 onClick={this.saveRule}
                 isLoading={this.state.saving}
+                disabled={true}
               >
                 {this.state.saving ? 'Saving..' : 'Save'}
               </EuiButton>

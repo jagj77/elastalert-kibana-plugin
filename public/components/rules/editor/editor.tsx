@@ -176,6 +176,7 @@ export default class Editor extends Component {
                 onClick={this.saveRule}
                 isLoading={this.state.saving}
                 disabled={true}
+                isDisabled={true}
               >
                 {this.state.saving ? 'Saving..' : 'Save'}
               </EuiButton>
@@ -190,7 +191,7 @@ export default class Editor extends Component {
           onClick={this.showModal}
           fill={this.props.editorMode === 'edit' ? false : true}
         >
-          {this.props.editorMode === 'edit' ? 'Edit rule' : 'Create rule'}
+          {this.props.editorMode === 'edit' ? 'Test rule' : 'Create rule'}
         </EuiButton>
         {modal}
       </div>

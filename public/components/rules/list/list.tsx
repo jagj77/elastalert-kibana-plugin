@@ -115,8 +115,9 @@ export default class List extends Component {
               )}
               {this.state.selectedRules.length > 0 && (
                 <EuiFlexItem>
-                  <Dangerous
+                  {/* <Dangerous
                     buttonText={'Delete ' + (this.state.selectedRules.length === 1 ? 'rule' : this.state.selectedRules.length + ' rules')}
+                    isEnabled={false}
                     title="Delete rule"
                     text={'You are about to delete ' + (this.state.selectedRules.length === 1 ? 'a rule' : this.state.selectedRules.length + ' rules')}
                     action={(modal) => deleteRule(this.props.httpClient, this.state.selectedRules,
@@ -134,7 +135,7 @@ export default class List extends Component {
                         addToast('Deleting failed', `Rule could not be deleted: (${e.status}) ${e.statusText}`, 'danger');
                       })
                     }
-                  />
+                  /> */}
                 </EuiFlexItem>
               )}
               {this.state.selectedRules.length === 1 && (
